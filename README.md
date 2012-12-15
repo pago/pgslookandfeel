@@ -9,17 +9,21 @@ Usage
 ============
 You may choose the "everyday" version of setting a PLAF:
 
-<pre><code>try {
+```java
+try {
 	UIManager.setLookAndFeel("com.pagosoft.plaf.PgsLookAndFeel");
 	// Is your UI already created? So you will have to update the component-tree
 	// of your current frame (or actually all of them...)
 	SwingUtilities.updateComponentTreeUI(yourFrame);
-} catch(Exception e) { /* Most of the time you're just going to ignore it */ }</code></pre>
+} catch(Exception e) { /* Most of the time you're just going to ignore it */ }
+```
 
 As an alternative both PlafOptions and PgsLookAndFeel provide static methods to do both of it:
 
-<pre><code>PlafOptions.setAsLookAndFeel();
-PlafOptions.updateAllUIs();</code></pre>
+```java
+PlafOptions.setAsLookAndFeel();
+PlafOptions.updateAllUIs();
+```
 
 Why is this better?
 
