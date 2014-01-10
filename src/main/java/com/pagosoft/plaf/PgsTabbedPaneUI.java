@@ -171,7 +171,7 @@ public class PgsTabbedPaneUI extends BasicTabbedPaneUI {
 				tabPane.repaint(rects[rolloverTabIndex]);
 			}
 			tabPane.repaint(rects[index]);
-		} else if(rolloverTabIndex != -1) {
+		} else if(rolloverTabIndex != -1 && rolloverTabIndex < rects.length) {
 			tabPane.repaint(rects[rolloverTabIndex]);
 		}
 		rolloverTabIndex = index;
