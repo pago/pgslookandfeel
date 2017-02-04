@@ -157,7 +157,7 @@ public class PgsTabbedPaneUI extends BasicTabbedPaneUI {
 	private int myTabForCoordinate(JTabbedPane pane, int x, int y) {
 		Point p = new Point(x, y);
 		int tabCount = tabPane.getTabCount();
-		for (int i = 0; i < tabCount; i++) {
+		for (int i = 0; i < tabCount && i < rects.length; i++) {
 			if (rects[i].contains(p.x, p.y)) {
 				return i;
 			}
